@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const { uuid, isUuid } = require("uuidv4");
 const app = express();
 
@@ -31,6 +32,7 @@ function validateProjectId(request, response, next) {
   return next();
 }
 
+app.use(cors());
 app.use(securityHeader);
 app.use(logRequests);
 app.use("/projects/:id", validateProjectId);
@@ -90,6 +92,7 @@ app.delete("/projects/:id", (request, response) => {
   return response.status(204).send();
 });
 
-app.listen(3333, () => {
-  console.log(":D Back-end started!");
+const port = process.env.PORT || 3333;
+app.listen(port, () => {
+  console.log(`😁 Back-end started!\n Listening on port ${port}`);
 });
