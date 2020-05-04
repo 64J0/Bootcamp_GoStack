@@ -86,4 +86,8 @@ Em seguida foram criadas as funcionalidades de cadastro de usuários, com cripto
 
 ---
 
+# 4️⃣️
+
+---
+
 **Vinícius Gajo Marques Oliveira, 2020.**
