@@ -7,9 +7,15 @@ Principais tecnologias usadas neste projeto:
 - Axios
 - Styled Components
 
-Neste projeto é dado continuidade ao desenvolvimento da aplicação **GoFinances**, focando no front-end do sistema, utilizando o **React JS** para criar as telas que serão exibidas para o usuário final. Esse sistema WEB se comunica com a API Rest desenvolvida no projeto **GoFinances Backend**, e portanto, só irá funcionar adequadamente caso esteja sendo executado este projeto.
+<p align="center">
+  <img src="https://github.com/64J0/Bootcamp_GoStack/blob/master/Modulo4-Primeiro-projeto-React/desafio-fundamentos-reactjs/assets-github/desafio_react_js.gif" alt="Demonstração do projeto GIF" />  
+</p>
 
-Através da chamada a determinadas rotas dessa API é possível receber dados em formato JSON que estavam armazenados no banco de dados da aplicação, que é executado em um container Docker localmente na máquina do usuário com uma imagem do Postgres configurada.
+Neste projeto é dado continuidade ao desenvolvimento da aplicação **GoFinances**, focando mais especificamente no front-end do projeto, onde é utilizado o **React JS** para criar as telas que serão exibidas para o usuário final no desktop. 
+
+Esse sistema WEB se comunica com a API Rest desenvolvida no projeto back-end do **GoFinances**, e portanto, só irá funcionar adequadamente caso esteja sendo executado este projeto sendo servido através da porta 3000.
+
+Resumo do funcionamento da API: Através da chamada a determinadas rotas (através do axios) é possível receber dados em formato JSON que estavam armazenados no banco de dados da aplicação, que é executado em um container Docker localmente na máquina do usuário com uma imagem do Postgres configurada.
 
 Com a realização deste projeto foi possível colocar em prática e exercitar alguns conhecimentos adquiridos ao assistir as aulas do nível 3 do Bootcamp GoStack (Primeiro projeto com React).
 
@@ -30,7 +36,7 @@ PS: Caso você esteja no windows e esteja sofrendo com algum erro ao tentar impo
   git clone <link_deste_repositório>
 
   # Entra na pasta do projeto
-  cd gostack-template-fundamentos-reactjs/
+  cd desafio-fundamentos-reactjs/
 
   # Caso você não tenha intalado o yarn:
   npm start
