@@ -1,0 +1,17 @@
+[Expansion Week] Desafio 02
+
+Um dos grandes desafios que um/uma desenvolvedor(a) tem, quando encontra uma vaga que deseja participar, é ter um bom "currículo", que encha os olhos do recrutador. Como desenvolvedor(a) muitas vezes nos esquecemos ou não nos sentimos preparados para descrever o nosso conhecimento e experiências. 
+
+Mas, se você consumiu o conteúdo de carreira e contratação da live de hoje, com certeza você pegou dicas que farão a diferença e te ajudarão a encarar as oportunidades profissionais de uma forma diferente, daqui pra frente.
+
+E pensando em todas essas dicas, queremos te passar o seguinte desafio:
+
+1 - Escrever uma breve descrição sobre suas experiências, seus conhecimentos técnicos e principais projetos que você já teve oportunidade de participar, como dev;
+
+2 - Subir algum projeto seu, desenvolvido no Bootcamp, para o GitHub, com um README personalizado, com as ferramentas utilizadas no desenvolvimento, instruções para a execução do projeto, uma descrição sobre do que se trata o projeto e claro, vale a criatividade nessa hora; e por fim, colocar a URL do GitHub aqui.
+
+Respostas:
+
+1 - Até então minhas experiências tem sido bastante variadas no que tange ao desenvolvimento WEB. Comecei criando algumas ferramentas para me auxiliar no curso de engenharia, por exemplo, fiz um site usando só HTML, CSS e Vanilla JS pra dimensionar linhas de vida, que é um processo iterativo pois algumas da equações fundamentais do sistema ainda não são conhecidas (https://github.com/64J0/dim_linhas_vida). Já criei uma extensão para o Google Chrome para me auxiliar a lembrar das tarefas que preciso com umas lista de TODO, também usando apenas as tecnologias mais simples de desenvolvimento (https://github.com/64J0/Extensions_Chrome). Já fiz um site encurtador de links que usa o MongoDB por baixo dos panos (https://github.com/64J0/UrlEncurtador). Já fiz um site que devia ser um pomodoro mas acabou sendo só um cronômetro normal mesmo kkkkk (https://github.com/64J0/pomodoro.io). Atualmente estou trabalhando em um site para usar em conjunto com um acelerômetro digital, que está sendo usado no TCC da faculdade (https://github.com/64J0/Bluetooth_WEB). E por último os dois maiores projetos que estive desenvolvendo ao longo de 2020 que são relacionados à empresa onde estou fazendo estágio atualmente, sendo utilizados para gestão interna, um deles é focado para administração dos documentos relacionados aos projetos (https://github.com/64J0/FULL_PLANS) e o outro serve para mostrar informações assertivas sobre estes projetos que são cadastrados, mostrando essas informações através de gráficos (https://github.com/64J0/fullplansBI). Esses dois últimos projetos foram onde pude aplicar grande parte dos meus conhecimentos em programação, usando frameworks e bibliotecas para desenvolver as soluções, por exemplo ReactJS para a criação das telas, Node.js e Express para criar os arquivos do back-end, e o MongoDB para servir como um banco de dados.
+
+2 - Ainda não tive tempo para me dedicar a melhorar os projetos desenvolvidos no Bootcamp, por isso escolhi mostrar um dos projetos que tenho trabalhado neste ano e que acredito tem o melhor README.md que já fiz kkkk. O link é: https://github.com/64J0/FULL_PLANS.
