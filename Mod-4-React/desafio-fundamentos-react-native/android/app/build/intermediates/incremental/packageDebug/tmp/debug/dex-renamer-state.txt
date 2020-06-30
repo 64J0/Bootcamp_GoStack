@@ -1,0 +1,4 @@
+#Mon Jun 29 01:15:59 BRT 2020
+base.0=/home/gajo/Desktop/Codes/desafio/gostack-template-fundamentos-react-native/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

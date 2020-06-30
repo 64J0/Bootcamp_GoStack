@@ -1,0 +1,22 @@
+O desafio é, explicar os conceitos de front-end e back-end para 4 públicos abaixo:
+
+- Uma criança de 10 anos;
+- Um jovem calouro na graduação de Ciência da Computação;
+- Uma idosa de 80 anos;
+- Linus Torvalds (Criador do Linux).
+
+Criança de 10 anos:
+	Basicamente, o front-end é um programa de computador que gera as telas que nós conseguimos ver e interagir, por exemplo, a página de pesquisar igual a do Google. Essa tela tem que ser bonita e fácil de usar. Já o back-end é a parte do código que a gente não consegue ver, mas que funciona por baixo dos panos, pra fazer, por exemplo, aquele botão do Google disparar uma ação que vai retornar pra gente os resultados das buscas que são relacionados aos termos que escrevemos pra na caixa de busca. Então o back-end atua fora das nossas vistas pra aplicar uma regra da empresa que é dona do programa. Quando esse back-end é executado ele retorna umas informações que vão ser mostradas pra gente, que é o usuário, na tela estilosa do navegador, por exemplo, que é a parte do front-end.
+
+Calouro:
+	O back-end é a parte de uma aplicação que trata apenas das regras do negócio do projeto. Por exemplo, buscar alguma informação num banco de dados, executar alguma operação com essa informação, e retornar o resultado dessa operação num formato que outra parte da aplicação consiga entender, por exemplo, um JSON, que você vai aprender mais pra frente no curso o que é.
+	Já o front-end é a parte do código que pega esses dados que o back-end processou e mostra pro usuário do sistema, de uma maneira estilosa na tela. A parte do front-end tem que se preocupar com COMO o usuário vai interagir com o sistema, por exemplo, mostrando alguns botões, ou caixa de texto, e com COMO esses elementos serão mostrados na tela do usuário.
+
+Idosa:
+	Pra explicar esses conceitos vou usar uma ferramenta que a senhora conhece, uma calculadora. O front-end é como se fossem os botões e o visor que mostra os resultados das contas que a gente faz. O back-end é como se fosse o circuito de dentro da calculadora, que faz tudo funcionar por baixo dos panos.
+	
+
+Linus:
+	O que diferencia estes dois conceitos é, basicamente, a o objetivo que espera-se do código que será desenvolvido, embora ambos devam trabalhar em sinergia para que o sucesso de um projeto seja alcançado. 
+	O front-end está associado à interação com o usuário do sistema, buscando tornar a experiência do cliente o mais agradável possível, fazendo uso de diversos conhecimentos oriundos dos campos do design e da psicologia, principalmente. Sendo mais detalhista, podemos identificar ainda duas subdivisões dentro do campo do front-end, sendo estas o profissional responsável pelo UI (User Interface) e o profissional responsável pelo UX (User Experience). O primeiro faz uso das tecnologias vindas primordialmente do campo do design, para criar telas com componentes bonitos e harmônicos, deixando a página estilosa. Já o profissional de UX tende a usar mais ferramentas do campo da psicologia, pois ele é responsável por definir como será a experiência do usuário com o sistema que está sendo desenvolvido, devendo abranger a maior quantidade de usuário possíveis, sendo necessário então um senso de empatia bastante aguçado. Algumas das tecnologias mais reconhecidas deste ramo são: React, Angular e Vue.
+	Já o back-end está associado a interações que não necessariamente envolvam um usuário humano do sistema. Este código é utilizado para implementar as regras de negócio da empresa, funcionando por baixo dos panos, em conjunto com o front-end da aplicação. Esse tipo de código que geralmente é executado unicamente em servidores, interage com os bancos de dados da aplicação, caso existam, implementando métodos para fazer tudo funcionar da maneira mais otimizada possível. A princípio, não faz parte das atribuições desse tipo de código exibir os resultados da aplicação das regras de negócio em um formato visualmente estiloso. Algumas das tecnologias mais reconhecidas deste ramo são: Node.js, Express, Adonis.
