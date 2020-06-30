@@ -6,9 +6,9 @@ import {
   UpdateDateColumn,
   ManyToOne,
   JoinColumn,
-} from '../shared/routes/node_modules/typeorm';
+} from 'typeorm';
 
-import User from '../../users/entities/User';
+import User from '@modules/users/infra/typeorm/entities/User';
 
 @Entity('appointments')
 class Appointment {

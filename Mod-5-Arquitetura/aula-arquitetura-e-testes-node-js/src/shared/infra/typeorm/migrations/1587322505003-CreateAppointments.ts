@@ -1,8 +1,4 @@
-import {
-  MigrationInterface,
-  QueryRunner,
-  Table,
-} from '../../shared/routes/node_modules/typeorm';
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export default class CreateAppointments1587322505003
   implements MigrationInterface {

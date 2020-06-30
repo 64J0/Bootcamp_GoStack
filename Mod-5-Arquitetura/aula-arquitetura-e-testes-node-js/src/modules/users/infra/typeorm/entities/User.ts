@@ -4,7 +4,7 @@ import {
   Column,
   CreateDateColumn,
   UpdateDateColumn,
-} from '../shared/routes/node_modules/typeorm';
+} from 'typeorm';
 
 @Entity('users')
 class User {

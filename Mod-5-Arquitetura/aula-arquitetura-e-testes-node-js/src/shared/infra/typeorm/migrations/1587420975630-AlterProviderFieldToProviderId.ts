@@ -3,7 +3,7 @@ import {
   QueryRunner,
   TableColumn,
   TableForeignKey,
-} from '../../shared/routes/node_modules/typeorm';
+} from 'typeorm';
 
 export default class AlterProviderFieldToProviderId1587420975630
   implements MigrationInterface {
