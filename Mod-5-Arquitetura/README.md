@@ -35,3 +35,7 @@ Definição:
 SOLI**D**:
 
 - Inversão de dependência: Ao invés do service precisar saber qual o formato do repositório que ele está lidando, essa relação será invertida.
+
+### Injeção de dependências:
+
+Para injetar dependências em um projeto é utilizado o pacote **tsyringe**. Para utilizar suas funcionalidades foi criada uma nova pasta chamada **container** dentro de _shared_, que é responsável por gerenciar a injeção de dependências.
