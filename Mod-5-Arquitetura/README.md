@@ -40,8 +40,36 @@ SOLI**D**:
 
 Para injetar dependências em um projeto é utilizado o pacote **tsyringe**. Para utilizar suas funcionalidades foi criada uma nova pasta chamada **container** dentro de _shared_, que é responsável por gerenciar a injeção de dependências.
 
-### Utilização dos Controllers:
+## Utilização dos Controllers:
 
 Na arquitetura adotada para o projeto do _back-end_, a principal responsabilidade dos **controllers** será lidar com as rotas da aplicação.
 
 Segundo algumas bibliografias, os _controllers_ devem implementar apenas cinco métodos: **index, show, create, update, delete**.
+
+## Testes automatizados
+
+Garantem o funcionamento da aplicação independentemente das próximas atualizações do código com o acréscimo de novas funcionalidades e do número de _devs_ no time.
+
+### Tipos de testes:
+
+1. Teste unitários (TDD):
+
+Testam funcionalidades específicas e isoladas da aplicação (precisam ser funções puras => não dependem de outras partes da aplicação).
+
+**JAMAIS**: Realizará chamadas à uma API, não terá um efeito colateral, depende apenas da própria aplicação.
+
+2. Teste de integração:
+
+Testam uma funcionalidade completa, passando por várias camadas da aplicação.
+
+Exemplo: Route -> Controller -> Serviço -> Repositório -> ...
+
+3. Teste E2E (_End-to-end_):
+
+São testes que simulam a ação do usuário dentro da nossa aplicação. Mais aplicável ao _front-end_.
+
+Exemplo: Clique no input de e-mail -> Preencha diego@rocketseat.com.br -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o dashboard.
+
+### TDD (Test Driven Development)
+
+Nessa metodologia os testes são criados antes da criação das próprias funcionalidades.
