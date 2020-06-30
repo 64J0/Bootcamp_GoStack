@@ -39,3 +39,9 @@ SOLI**D**:
 ### Injeção de dependências:
 
 Para injetar dependências em um projeto é utilizado o pacote **tsyringe**. Para utilizar suas funcionalidades foi criada uma nova pasta chamada **container** dentro de _shared_, que é responsável por gerenciar a injeção de dependências.
+
+### Utilização dos Controllers:
+
+Na arquitetura adotada para o projeto do _back-end_, a principal responsabilidade dos **controllers** será lidar com as rotas da aplicação.
+
+Segundo algumas bibliografias, os _controllers_ devem implementar apenas cinco métodos: **index, show, create, update, delete**.
