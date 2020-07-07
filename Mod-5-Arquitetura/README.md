@@ -4,6 +4,7 @@ As arquiteturas de _software_ são regras aplicáveis a projetos que deverão es
 
 Estrutura atual do projeto:
 
+```
 src
 |-config
 |-database
@@ -13,6 +14,7 @@ src
 |-repositories
 |-routes
 |-services
+```
 
 Os códigos estão sendo separados pelas suas funcionalidades, em cada pasta do projeto.
 
@@ -130,3 +132,17 @@ Os tópicos abaixo indicam as funcionalidades mapeadas de acordo com o _layout_ 
     - O usuário não pode agendar em um horário já ocupado;
     - O usuário não pode agendar em um horário que já passou;
     - O usuário não pode agendar serviços consigo mesmo;
+
+## Aplicando TDD na prática
+
+Segundo a metodologia do TDD, primeiro devemos criar os arquivos de testes, mesmo que estes não passem para depois criarmos as funcionalidades que farão o teste passar.
+
+```javascript
+// RED
+// GREEN
+// REFACTOR
+```
+
+## Estratégia para a funcionalidade de e-mails
+
+Para testar a funcionalidade de e-mails no ambiente de desenvolvimento será utilizada a ferramenta chamada _mail trap_, que fará com que todos os e-mails enviados sejam direcionados para a mesma caixa de entrada.
