@@ -29,7 +29,7 @@ class FakeUsersRepository implements IUsersRepository {
 
     const user = new User();
 
-    Object.assign(user, { id: uuid }, userData);
+    Object.assign(user, { id: uuid() }, userData);
 
     this.users.push(user);
 
