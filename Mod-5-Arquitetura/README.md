@@ -146,3 +146,19 @@ Segundo a metodologia do TDD, primeiro devemos criar os arquivos de testes, mesm
 ## Estratégia para a funcionalidade de e-mails
 
 Para testar a funcionalidade de e-mails no ambiente de desenvolvimento será utilizada a ferramenta chamada _mail trap_, que fará com que todos os e-mails enviados sejam direcionados para a mesma caixa de entrada.
+
+# Finalizando back-end do app
+
+Como o título sugere, nesse último capítulo do desenvolvimento do _back-end_ da aplicação, serão implementadas as últimas funcionalidades que ficaram faltando.
+
+## MongoDB
+
+Atualmente, como banco de dados da aplicação foi utilizado apenas o Postgres devido a suas características de relacionamento entre as tabelas. Além do fato de termos um maior controla da estrutura do banco em si, as colunas, _migrations_, etc.
+
+Quando usar o **MongoDB**:
+
+O **MongoDB** deve ser usado quando tivermos uma grande quantidade de dados entrando e sendo alterados, e pouco relacionamento entre os dados.
+
+Quando usar o **Redis**:
+
+O **Redis** é um banco de dados bastante utilizado para armazenar dados que serão reescritos muitas vezes. Por exemplo: cache, filas.

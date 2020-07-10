@@ -1,4 +1,4 @@
 // Arquivo onde é feita a conexão com o banco de dados
-import { createConnection } from 'typeorm';
+import { createConnections } from 'typeorm';
 
-createConnection();
+createConnections();

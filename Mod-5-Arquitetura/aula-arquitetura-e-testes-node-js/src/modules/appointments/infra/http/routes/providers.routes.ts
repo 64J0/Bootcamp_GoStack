@@ -13,6 +13,7 @@ const providerMonthAvailabilityController = new ProviderMonthAvailabilityControl
 providersRouter.use(ensureAuthenticated);
 
 providersRouter.get('/', providersCotroller.index);
+
 providersRouter.get(
   '/:provider_id/month-availability',
   providerMonthAvailabilityController.index,
