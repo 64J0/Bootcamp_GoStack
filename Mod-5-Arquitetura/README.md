@@ -162,3 +162,9 @@ O **MongoDB** deve ser usado quando tivermos uma grande quantidade de dados entr
 Quando usar o **Redis**:
 
 O **Redis** é um banco de dados bastante utilizado para armazenar dados que serão reescritos muitas vezes. Por exemplo: cache, filas.
+
+## Validação no back-end:
+
+Como "desencargo de consciência", será implementada a funcionalidade de validação dos campos recebidos no _back-end_. Para fazer isto de uma maneira facilitada é utilizado o pacote **celebrate** do _Node.js_.
+
+Este pacote implementa as mesmas funçoes do **joi**, porém, nesta implementação as funções podem ser usadas como um _middleware_ no _Express_.
