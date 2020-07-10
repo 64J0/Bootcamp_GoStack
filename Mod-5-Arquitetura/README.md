@@ -168,3 +168,7 @@ O **Redis** é um banco de dados bastante utilizado para armazenar dados que ser
 Como "desencargo de consciência", será implementada a funcionalidade de validação dos campos recebidos no _back-end_. Para fazer isto de uma maneira facilitada é utilizado o pacote **celebrate** do _Node.js_.
 
 Este pacote implementa as mesmas funçoes do **joi**, porém, nesta implementação as funções podem ser usadas como um _middleware_ no _Express_.
+
+## Variáveis ambiente:
+
+São informações que terão valores diferentes dependendo do ambiente em que a aplicação estiver rodando. Por exemplo, em desenvolvimento o acesso ao banco de dados é de um jeito, porém em produção, o acesso ao banco de dados é diferente.
