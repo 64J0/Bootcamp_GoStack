@@ -172,3 +172,11 @@ Este pacote implementa as mesmas funçoes do **joi**, porém, nesta implementaç
 ## Variáveis ambiente:
 
 São informações que terão valores diferentes dependendo do ambiente em que a aplicação estiver rodando. Por exemplo, em desenvolvimento o acesso ao banco de dados é de um jeito, porém em produção, o acesso ao banco de dados é diferente.
+
+## Utilizando class transformer:
+
+Em algumas situações da nossa aplicação, pode ser necessário alterar ou transformar o funcionamento de alguma classe. Por exemplo, quando o usuário for se cadastrar, é recomendável que o _password_ informado não seja enviado para o _front-end_, por isso, devemos alterar o funcionamento normal da classe.
+
+Para realizar essa alteração será utilizado o pacote **class-transformer**.
+
+## E-mails pelo Amazon SES
