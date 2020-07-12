@@ -180,3 +180,11 @@ Em algumas situações da nossa aplicação, pode ser necessário alterar ou tra
 Para realizar essa alteração será utilizado o pacote **class-transformer**.
 
 ## E-mails pelo Amazon SES
+
+Para enviar os e-mails da aplicação será utilizado o **Amason SES** (_Simple Email Service_), pois este é o mais barato dentre as opções disponíveis.
+
+Algumas outras opções bastante utilizadas:
+
+- sparkpost
+- mailgun
+- mailchimp
