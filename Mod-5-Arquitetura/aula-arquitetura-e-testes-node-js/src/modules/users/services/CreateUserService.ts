@@ -23,7 +23,7 @@ class CreateUserService {
     private hashProvider: IHashProvider,
 
     @inject('CacheProvider')
-    private cacheProvier: ICacheProvider,
+    private cacheProvdier: ICacheProvider,
   ) {}
 
   public async execute({ name, email, password }: IRequest): Promise<User> {
@@ -43,7 +43,7 @@ class CreateUserService {
 
     await this.usersRepository.save(user);
 
-    await this.cacheProvier.invalidatePrefix('providers-list');
+    await this.cacheProvdier.invalidatePrefix('providers-list');
 
     return user;
   }
