@@ -197,3 +197,17 @@ Segundo o Diego, o Node.js propicia uma grande facilidade de escalar as aplicaç
 
 - Escala vertical - Aumenta os recursos, adicionando mais memória e processamento à máquina por exemplo;
 - Escala horizontal - Cria um novo servidor para lidar com requisições (distribuição de carga).
+
+# Cache e segurança
+
+Por fim será configurado o _cache provider_ da aplicação. Essa estratégia nos permite armazenar um resultado de uma _query_ no banco de dados evitando o processamento desta _query_.
+
+Será utilizado o banco de dados **Redis**. Neste banco de dados não existem tabelas nem é possível salvar dados estruturados.
+
+Assim como no localStorage, podemos pensar no **Redis** como um banco de dados composto por uma única tabela com dados armazenados no formato chave e valor.
+
+```bash
+docker run --name redis -p 6379:6379 -d -t redis:alpine
+```
+
+O _driver_ utilizado para lidar com o **Redis** será o **ioredis**.
