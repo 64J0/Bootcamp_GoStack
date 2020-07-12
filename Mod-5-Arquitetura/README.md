@@ -188,3 +188,12 @@ Algumas outras opções bastante utilizadas:
 - sparkpost
 - mailgun
 - mailchimp
+
+## Upload de arquivos para o Amazon S3
+
+O **Amazon S3** é um _CDN_ (_Content Delivery Network_) para enviar arquivos rapidamente para os usuários. São servidores muito otimizados em relação à performance e com pouco espaço de armazenamento.
+
+Segundo o Diego, o Node.js propicia uma grande facilidade de escalar as aplicações horizontalmente:
+
+- Escala vertical - Aumenta os recursos, adicionando mais memória e processamento à máquina por exemplo;
+- Escala horizontal - Cria um novo servidor para lidar com requisições (distribuição de carga).
