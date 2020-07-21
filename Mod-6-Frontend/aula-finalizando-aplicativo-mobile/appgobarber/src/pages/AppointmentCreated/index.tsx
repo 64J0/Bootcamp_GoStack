@@ -43,7 +43,7 @@ const AppointmentCreated: React.FC = () => {
 
   return (
     <Container>
-      <Icon name="check" size={80} color="04d361" />
+      <Icon name="check" size={80} color="#04d361" />
 
       <Title>Agendamento concluído</Title>
       <Description>{formattedDate}</Description>
