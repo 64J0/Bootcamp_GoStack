@@ -14,7 +14,7 @@ import { Container, Error } from './styles';
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   containerStyle?: object;
-  icon: React.ComponentType<IconBaseProps>;
+  icon?: React.ComponentType<IconBaseProps>;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -29,13 +29,9 @@ const Input: React.FC<InputProps> = ({
   const [isFilled, setIsFilled] = useState(false);
   const { fieldName, defaultValue, error, registerField } = useField(name);
 
-  useEffect(() => {
-    registerField({
-      name: fieldName,
-      ref: inputRef.current,
-      path: 'value',
-    });
-  }, [fieldName, registerField]);
+  const handleInputFocus = useCallback(() => {
+    setIsFocused(true);
+  }, []);
 
   // Esse hook garante que essa função será recriada
   // apenas em determinadas situações que nós devs
@@ -46,9 +42,13 @@ const Input: React.FC<InputProps> = ({
     setIsFilled(!!inputRef.current?.value);
   }, []);
 
-  const handleInputFocus = useCallback(() => {
-    setIsFocused(true);
-  }, []);
+  useEffect(() => {
+    registerField({
+      name: fieldName,
+      ref: inputRef.current,
+      path: 'value',
+    });
+  }, [fieldName, registerField]);
 
   return (
     <Container
@@ -56,6 +56,7 @@ const Input: React.FC<InputProps> = ({
       isErrored={!!error}
       isFocused={isFocused}
       isFilled={isFilled}
+      data-testid="input-container"
     >
       {Icon && <Icon size={20} />}
       <input
