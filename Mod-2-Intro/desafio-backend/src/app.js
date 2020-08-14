@@ -10,21 +10,10 @@ app.use(cors());
 const repositories = [];
 
 app.get("/repositories", (request, response) => {
-  /**
-   * REQUISITOS:
-   *
-   * Rota que lista todos os repositórios
-   */
-
   return response.status(200).send(repositories);
 });
 
 app.post("/repositories", (request, response) => {
-  /**
-   * REQUISITOS:
-   *
-   * Esta rota deve receber title, url e techs dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: { id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
-   */
   const { title, url, techs } = request.body;
 
   const newRepository = {
@@ -36,18 +25,10 @@ app.post("/repositories", (request, response) => {
   };
 
   repositories.push(newRepository);
-
-  // 201 === CREATED
   return response.status(201).send(newRepository);
 });
 
 app.put("/repositories/:id", (request, response) => {
-  /**
-   * REQUISITOS:
-   *
-   * A rota deve alterar apenas o título, a url e as techs do repositório que possua o id igual ao id presente nos parâmetros da rota;
-   */
-
   const { id } = request.params;
   const { title, url, techs } = request.body;
 
@@ -63,17 +44,10 @@ app.put("/repositories/:id", (request, response) => {
   };
 
   repositories[repoIndex] = newRepo;
-
   return response.status(200).json(newRepo);
 });
 
 app.delete("/repositories/:id", (req, res) => {
-  /**
-   * REQUISITOS:
-   *
-   * A rota deve deletar o repositório com o id presente nos parâmetros da rota;
-   */
-
   const { id } = req.params;
 
   const repoIndex = repositories.findIndex((repo) => repo.id === id);
@@ -84,12 +58,6 @@ app.delete("/repositories/:id", (req, res) => {
 });
 
 app.post("/repositories/:id/like", (request, response) => {
-  /**
-   * REQUISITOS:
-   *
-   * A rota deve aumentar o número de likes do repositório específico escolhido através do id presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1
-   */
-
   const { id } = request.params;
 
   const repoIndex = repositories.findIndex((repo) => repo.id === id);

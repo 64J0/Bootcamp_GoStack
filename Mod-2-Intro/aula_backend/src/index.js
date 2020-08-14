@@ -1,13 +1,10 @@
 const express = require("express");
 const cors = require("cors");
-const { uuid, isUuid } = require("uuidv4");
+const { uuid } = require("uuidv4");
 const app = express();
 
-// Middlewares
-function securityHeader(request, response, next) {
-  response.setHeader("X-Powered-By", "");
-  next();
-}
+const validateProjectId = require("./Middlewares/validateProjectId");
+const securityHeader = require("./Middlewares/securityHeader");
 
 function logRequests(request, response, next) {
   const { method, url } = request;
@@ -20,16 +17,6 @@ function logRequests(request, response, next) {
   next();
 
   console.timeEnd(logLabel);
-}
-
-function validateProjectId(request, response, next) {
-  const { id } = request.params;
-
-  if (!isUuid(id)) {
-    return response.status(400).json({ error: "Invalid id" });
-  }
-
-  return next();
 }
 
 app.use(cors());

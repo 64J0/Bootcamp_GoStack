@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "description": "This code is the resolution of the first problem of the GoStack Bootcamp.",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
